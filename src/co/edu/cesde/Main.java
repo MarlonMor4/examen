@@ -42,7 +42,7 @@ public class Main {
 
             if (total > 20000) {
 
-                descuento = total + (total * 0.10);
+                descuento = total - (total * 0.10);
                 System.out.println("Se le realizó un descuento por compras superiores a 20000 pesos");
 
                 System.out.println("Desea incluir propina 1.si y 2 no:");
@@ -60,7 +60,7 @@ public class Main {
                 System.out.println("Desea incluir propina 1.si y 2 no:");
                 propina = examen.nextInt();
                 if (propina == 1) {
-                    pagar = total + (total * 0.10);
+                    pagar = total - (total * 0.10);
                     System.out.println("Total pagar:" + pagar);
                 } else {
                     System.out.println("Total pagar=" + total);
